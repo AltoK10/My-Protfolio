@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .video-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Name - Md Obaid</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Md Obaid], a passionate video editor with [3] years of experience. I specialize in [My Specialties, e.g., Car Type Editing, documentaries, social media]. Let's create something amazing together!</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="Caption Editing">
+                <h3>Project 1: Caption Editing</h3>
+                <iframe src="https://drive.google.com/file/d/15QBpou2kO6a-1HJ-XHWRZ-6yfWqv8UqS/view?usp=drive_link" frameborder="0" allowfullscreen></iframe>
+                <p>Description of the project.</p>
+            </div>
+            <div class="Documentary">
+                <h3>Project 2: Documentary Edit</h3>
+                <iframe src="https://drive.google.com/file/d/1nNBJ3a7T5fHabUqG7EUYSC_Dm7xqOQFt/view?usp=drive_link" frameborder="0" allowfullscreen></iframe>
+                <p>Description of the project.</p>
+            </div>
+            <!-- Add more video items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: gamerobaid21@gmail.com</p>
+        <p>Phone: (+91) 6206055271</p>
+        <p>Instagram: <a href="https://www.instagram.com/carguy._.obaid?igsh=M2V1bmI5YWFvbWlr">Instagram.com/in/carguy._.obaid</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MD Obaid. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Add smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
